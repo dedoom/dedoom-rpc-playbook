@@ -24,9 +24,8 @@ exec /mnt/solana/target/release/solana-validator \
 --ledger /mnt/solana-ledger \
 --snapshots /mnt/solana-snapshots \
 --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
---limit-ledger-size 400000000 \
---rpc-send-default-max-retries 3 \
---rpc-send-service-max-retries 3 \
+--rpc-send-default-max-retries 5 \
+--rpc-send-service-max-retries 5 \
 --rpc-send-retry-ms 2000 \
 --full-rpc-api \
 --accounts-index-memory-limit-mb 350 \
