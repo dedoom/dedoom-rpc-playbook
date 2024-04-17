@@ -46,7 +46,7 @@ git clone https://github.com/overclock-validator/autoclock-rpc.git
 ### Step 5: cd into the autoclock-rpc folder
 
 ```
-cd autoclock-rpc
+cd autoclock-rpc-modded
 ```
 
 ### Step 6: Run the ansible command
