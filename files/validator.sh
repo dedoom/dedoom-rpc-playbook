@@ -16,6 +16,7 @@ exec /mnt/solana/target/release/solana-validator \
 --private-rpc \
 --rpc-bind-address 0.0.0.0 \
 --enable-cpi-and-log-storage \
+--account-index program-id \
 --account-index spl-token-owner \
 --enable-rpc-transaction-history \
 --wal-recovery-mode skip_any_corrupted_record \
