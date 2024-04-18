@@ -40,13 +40,13 @@ sudo apt-get update && sudo apt-get install ansible -y
 ### Step 4: Clone the autoclock-rpc repository
 
 ```
-git clone https://github.com/overclock-validator/autoclock-rpc.git
+git clone https://github.com/dedoom/dedoom-rpc-playbook.git
 ```
 
 ### Step 5: cd into the autoclock-rpc folder
 
 ```
-cd autoclock-rpc-modded
+cd dedoom-rpc-modded
 ```
 
 ### Step 6: Run the ansible command
