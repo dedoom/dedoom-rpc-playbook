@@ -46,7 +46,7 @@ git clone https://github.com/dedoom/dedoom-rpc-playbook.git
 ### Step 5: cd into the autoclock-rpc folder
 
 ```
-cd dedoom-rpc-modded
+cd dedoom-rpc-playbook
 ```
 
 ### Step 6: Run the ansible command
