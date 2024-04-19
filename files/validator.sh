@@ -1,5 +1,4 @@
 #!/bin/bash
-#export SOLANA_METRICS_CONFIG="host=https://metrics.solana.com:8086,db=mainnet-beta,u=mainnet-beta_write,p=password"
 exec /mnt/solana/target/release/solana-validator \
 --identity /home/solana/rpc_node.json \
 --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
@@ -7,6 +6,10 @@ exec /mnt/solana/target/release/solana-validator \
 --entrypoint entrypoint3.mainnet-beta.solana.com:8001 \
 --entrypoint entrypoint4.mainnet-beta.solana.com:8001 \
 --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
+--known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
+--known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
+--known-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
+--known-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S \
 --rpc-port 8899 \
 --dynamic-port-range 8002-8099 \
 --no-port-check \
@@ -15,9 +18,7 @@ exec /mnt/solana/target/release/solana-validator \
 --halt-on-trusted-validators-accounts-hash-mismatch \
 --wal-recovery-mode skip_any_corrupted_record \
 --no-voting \
---no-untrusted-rpc \
 --no-os-network-limits-test \
---no-duplicate-instance-check \
 --private-rpc \
 --enable-cpi-and-log-storage \
 --enable-rpc-transaction-history \
@@ -35,7 +36,4 @@ exec /mnt/solana/target/release/solana-validator \
 --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
 --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
 --account-index-exclude-key metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s \
---known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
---known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
---known-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
---known-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S
+--no-untrusted-rpc
