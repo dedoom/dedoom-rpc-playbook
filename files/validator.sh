@@ -1,5 +1,5 @@
 #!/bin/bash
-export SOLANA_METRICS_CONFIG="host=https://metrics.solana.com:8086,db=mainnet-beta,u=mainnet-beta_write,p=password"
+#export SOLANA_METRICS_CONFIG="host=https://metrics.solana.com:8086,db=mainnet-beta,u=mainnet-beta_write,p=password"
 exec /mnt/solana/target/release/solana-validator \
 --identity /home/solana/rpc_node.json \
 --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
