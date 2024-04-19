@@ -20,6 +20,8 @@
     - chrony
     - htop
     - acl
+    - fail2ban
+    - protobuf-compiler
       
 - name: check if cargo is installed
   become: true
