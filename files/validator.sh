@@ -16,9 +16,9 @@ exec /mnt/solana/target/release/solana-validator \
 --wal-recovery-mode skip_any_corrupted_record \
 --no-voting \
 --private-rpc \
-# --account-index program-id \
-# --account-index spl-token-owner \
-# --account-index spl-token-mint \
+--account-index program-id \
+--account-index spl-token-owner \
+--account-index spl-token-mint \
 --log /mnt/logs/solana-validator.log \
 --accounts /mnt/solana-accounts \
 --ledger /mnt/solana-ledger \
