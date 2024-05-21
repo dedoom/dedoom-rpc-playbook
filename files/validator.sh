@@ -29,7 +29,6 @@ exec /mnt/solana/target/release/solana-validator \
 --full-rpc-api \
 --private-rpc \
 --no-voting \
---only-known-rpc \
 --dynamic-port-range 8000-10000 \
 --rpc-port 8899 \
 --gossip-port 8001 \
