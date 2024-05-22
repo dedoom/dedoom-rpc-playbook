@@ -22,6 +22,7 @@
     - acl
     - fail2ban
     - protobuf-compiler
+    - cpufrequtils
       
 - name: check if cargo is installed
   become: true
