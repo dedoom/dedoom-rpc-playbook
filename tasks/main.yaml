@@ -34,18 +34,7 @@
 - name: tune host
   include_tasks: tuner.yaml
 
-- name: snapshot download
-  include_tasks: snapshot_downloader.yaml
-  when: download_snapshot|default(true)|bool == true
-
-- name: restart without waiting
+- name: start sol.service
   become: true
   become_user: root
-  shell: /home/solana/restart.sh 1
-  when: download_snapshot|default(true)|bool == true
-
-- name: restart with waiting
-  become: true
-  become_user: root
-  shell: /home/solana/restart.sh
-  when: download_snapshot|default(true)|bool == false
+  shell: /home/solana/start.sh
