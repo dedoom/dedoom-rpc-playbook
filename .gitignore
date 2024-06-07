@@ -1,3 +1,6 @@
 additional-setup-notes.sh
 addtional-investigation.sh
 additional-validator-help-info.sh
+/log investigation/*
+bot config.log
+outcomes.log
