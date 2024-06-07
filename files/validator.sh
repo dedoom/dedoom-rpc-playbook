@@ -38,8 +38,8 @@ exec /mnt/solana/target/release/solana-validator \
 --accounts /mnt/solana-accounts \
 --ledger /mnt/solana-ledger \
 --snapshots /mnt/solana-snapshots \
---limit-ledger-size 300000000 \
---minimal-snapshot-download-speed 50000000 \
+--limit-ledger-size 400000000 \
+--minimal-snapshot-download-speed 60000000 \
 --wal-recovery-mode skip_any_corrupted_record \
 --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
 --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
